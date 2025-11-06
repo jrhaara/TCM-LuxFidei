@@ -1,0 +1,356 @@
+/* ===== VARIÁVEIS DE TEMA ===== */
+:root {
+    --bg1-color: #000;
+    --bg3-color: #ffffff;
+    --text1-color: #000;
+    --text2-color: rgba(0, 0, 0, 0.514);
+    --accent-color: #d69302;
+    --footer-color: rgb(77, 23, 2);
+}
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--bg1-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 15px;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 30px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border: none;
+    background-color: var(--bg1-color);
+}
+.logo img {
+    width: 70px;
+    transition: transform 0.4s ease;
+}
+.logo img:hover {
+    transform: scale(1.1);
+}
+.len img{
+    width: 30px;
+    border-radius: 5px;
+    transition: transform 0.4s ease;
+}
+.len img:hover {
+    transform: scale(1.1);
+}
+.headerbtn button {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 30px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.headerbtn button:hover {
+    transform: scale(1.1);
+}
+
+/* ===== NAV (MENU LATERAL) ===== */
+nav {
+    position: fixed;
+    top: 0;
+    left: -500px; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 25px;
+    transition: left 0.4s ease;
+    z-index: 999;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.6);
+    border-right: 2px solid var(--accent-color);
+}
+
+nav.active {
+    left: 0;
+}
+
+nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: "Jim Nightshade", cursive;
+    font-size: 2vw;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.closeNav {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.closeNav:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+/*------INTRO-----*/
+
+.intro {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.titulo {
+    font-family: "Jim Nightshade", cursive;
+    font-size: 4.5vw;
+    color: var(--accent-color);
+}
+
+.text {
+    color: var(--text2-color);
+    font-family: 'SUSE MONO', 'Times New Roman', Times;
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+/*------VITRAIS-----*/
+
+.vitrais {
+    display: flex ;
+    background-color: var(--bg1-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 50px;   
+    padding-bottom: 20px; 
+}
+.vitrais3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.vitras {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: column  ;
+}
+
+.vitra {
+    display: flex;
+    justify-content: space-around;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.13));
+    padding: 15px;
+}
+
+.vitra img{
+    width: 212px;
+    transition: transform 0.4s ease;
+}
+
+.textvi {margin: 5px;}
+
+.textvi p {
+    color: var(--bg3-color);
+    font-family: Italiana, 'Times New Roman', Times;
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+.vitra img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+    height: 200px;
+    background-color: var(--footer-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    flex-direction: column;
+}
+footer p {
+    margin-top: 30px;
+    color: var(--bg3-color);
+    font-family: Italiana, 'Times New Roman', Times;
+    font-size: 1.6vw;
+    text-align: center;
+}
+footer .navplus {
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plus a {
+    color: var(--bg3-color);
+    font-family: Italiana, 'Times New Roman', Times;
+    font-size: 2vw;
+    text-decoration: none;
+    margin:  30px;
+    transition: ease 0.4s;
+}
+.plus a:hover {
+    font-size: 2.4vw;
+}
+
+/* ===== RESPONSIVIDADE TABLET ===== */
+@media screen and (max-width: 1000px) {
+
+    /* ===== HEADER ===== */
+    header {
+        padding: 12px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .headerbtn button {
+        font-size: 30px;
+    }
+
+    .len img {
+        width: 25px;
+        border-radius: 3px;
+    }
+
+    /* ===== NAV ===== */
+    nav a {
+        font-size: 2.6rem;
+    }
+
+    /* ===== INTRO ===== */
+    .intro {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    /* ===== VITRAIS ===== */
+    .vitra {
+        padding: 10px;
+    }
+
+    .vitra img{
+        width: 192px;
+    }
+
+    .textvi p {
+        font-size: 1.25rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer p {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .plus a {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===== RESPONSIVIDADE CELL ===== */
+@media screen and (max-width: 800px) {
+
+    *:hover {
+        display: none;
+    }
+
+    .logo img {
+      width: 65px;
+    }
+  
+    .headerbtn button {
+      font-size: 22px;
+    }
+  
+      /* ===== NAV ===== */
+    nav a {
+      font-size: 1.7rem;
+    }
+
+    /* ===== INTRO ===== */
+    .titulo {
+        font-size: 2.3rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    /* ===== VITRAIS ===== */
+    .vitrais3 {
+    flex-direction: column;
+    }
+
+    .vitra {
+        padding: 15px;
+    }
+
+    .vitra img{
+        width: 217px;
+    }
+
+    .textvi p {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .plus a {
+        font-size: 1.2rem;
+    }
+}

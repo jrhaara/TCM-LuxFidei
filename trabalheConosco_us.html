@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lux Fidei</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jim+Nightshade&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/trabaleConosco.css">
+</head>
+<body>
+    <header>
+        <div class="headerbtn">
+            <button>☰</button>
+        </div>
+        <div class="logo">
+            <a href="index_us.html"><img src="Imagens/file_00000000933861f789939c2c3f29ab35.png" alt=""></a>
+        </div>
+        <div class="len">
+            <a href="trabalheConosco_pt.html"><img src="Imagens/br.png" alt=""></a>
+        </div>
+    </header>
+    <!-- Side Menu -->
+    <nav id="sideNav" aria-label="Side menu">
+        <button class="closeNav" id="closeNav" aria-label="Close menu">×</button>
+        <a href="#">Dogmas about God</a>
+        <a href="#">Dogmas about Jesus Christ</a>
+        <a href="#">Dogmas about the Creation of the World</a>
+        <a href="#">Dogmas about the Human Being</a>
+        <a href="#">Marian Dogmas</a>
+        <a href="#">Dogmas about the Pope and the Church</a>
+        <a href="#">Dogmas about the Sacraments</a>
+        <a href="#">Dogmas about the Last Things</a>  
+    </nav>
+    <main>
+        <div class="CF"></div>
+        <div class="titl"><p>Form</p></div>
+        <form name="trabaleConosco" method="POST" data-netlify="true">
+            <div class="GF1">
+                <label for="nome"><b>Full Name:</b></label>
+                <input type="text" class="nome" name="nome" required>
+            </div>
+            <div class="GF1">
+                <label for="email"><b>Email:</b></label>
+                <input type="email" class="email" name="email" required>
+            </div>
+            <div class="GF1">
+                <label for="phone"><b>Phone:</b></label>
+                <input type="tel" class="phone" name="phone" pattern="\([0-9]{2}\)\s?[0-9]{4,5}-[0-9]{4}" placeholder="Ex: (11) 91234-5678">
+            </div>
+            <div class="GF1">
+                <label for="idade"><b>Age:</b></label>
+                <input type="number" class="idade" name="idade" min="10" max="100">
+            </div>
+            <div class="GF2">
+                <p><strong>Gender:</strong></p>
+                <label>
+                    <input type="radio" name="genero" value="female">
+                    Female
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="male">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="other">
+                    Prefer not to say
+                </label>
+            </div>
+            <div class="GF1">
+                <label for="data"><b>Date of Birth:</b></label>
+                <input type="date" class="data" name="data">
+            </div>
+            <div class="GF2">
+                <strong>Why do you want to work with us?</strong>
+                <p></p>
+                <div class="GF2LB">
+                    <label><input type="checkbox" name="Por Que" value="Gostei da ideia"> I liked the idea</label>
+                    <label><input type="checkbox" name="Por Que" value="Trabalho com isso"> I work with websites</label>
+                    <label><input type="checkbox" name="Por Que" value="Sou da Igreja"> I am a Priest, Seminarian, Deacon, or others and I</label>
+                </div>
+            </div>
+            <div class="GF1">
+                <label for="mensagem"><b>Message:</b></label>
+                <textarea class="mensagem" name="mensagem" rows="2"></textarea>
+            </div>
+            <div class="GFC">
+                <button type="submit" class="btn">Send</button>
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_next" value="">                
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="plus"><a href="">About Us</a></div>
+        <div><p>© 2025 Lux Fidei — All rights reserved</p></div>
+    </footer>
+    <script src="js/trabalheConosco.js"></script>
+</body>
+</html>
