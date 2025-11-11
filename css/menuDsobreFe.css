@@ -302,10 +302,6 @@ footer .navplus {
 /* ===== RESPONSIVIDADE CELL ===== */
 @media screen and (max-width: 800px) {
 
-    *:hover {
-        display: none;
-    }
-
     .logo img {
       width: 65px;
     }
