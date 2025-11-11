@@ -83,7 +83,7 @@ header {
 nav {
     position: fixed;
     top: 0;
-    left: -500px; 
+    left: -700px; 
     height: 100%;
     background-color: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(8px);
@@ -136,9 +136,11 @@ nav a:hover {
 
 /* ===== MAIN ===== */
 main {
-    padding: 200px;
+    padding-top: 150px;
+    width: 80%;
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
 }
 
 .joao {
@@ -172,7 +174,7 @@ main {
     margin-right: 70px;
 }
 
- .text p{
+.text p{
     color: var(--text-color);
     font-family: "SUSE Mono", 'Times New Roman', Times;
     font-size: 1.4vw;
@@ -272,6 +274,33 @@ footer .navplus {
 
     /* ===== MAIN ===== */
 
+    main {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .paroquia, .joao{
+        flex-direction: column;
+    }
+
+    .joao .text, .paroquia .text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .imgs img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .text p {
+        font-size: 1.5rem;
+    }
+    
+    .font a {
+        font-size: 1rem;
+    }
+
     /* ===== FOOTER ===== */
     footer p {
         font-size: 2rem;
@@ -301,6 +330,20 @@ footer .navplus {
     /* ===== NAV ===== */
     nav a {
       font-size: 1.7rem;
+    }
+    
+    /* ===== MAIN ===== */
+    .imgs img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .text p {
+        font-size: 1.1rem;
+    }
+    
+    .font a {
+        font-size: 0.8rem;
     }
 
     /* ===== FOOTER ===== */
