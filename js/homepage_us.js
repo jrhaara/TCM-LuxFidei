@@ -216,3 +216,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+
+  // ---------- Aparecer ao rolar (IntersectionObserver)
+  const sections = document.querySelectorAll('.infos');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        // se preferir que apareça só uma vez:
+        // observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(sec => observer.observe(sec));

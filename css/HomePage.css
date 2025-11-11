@@ -214,7 +214,9 @@ nav a:hover {
 }
 .vitral img { width: 210px; }
 
-.vitral {filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.13));}
+.vitral {transition: ease 0.4s;filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.13));}
+
+.vitral:hover {filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.13));}
 
 .vitral img:hover { transform: scale(1.05); }
 
@@ -289,7 +291,14 @@ main {
     margin: 85px auto 0;
 }
 .infos {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+.infos.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 .ttl p {
     font-family: "Jim Nightshade", cursive;
@@ -400,7 +409,6 @@ footer .navplus {
 
   .vitralcel img {
     width: 200px;             
-    max-width: 250px;
     height: 400px;
     border-radius: 18px;
     box-shadow: none;
@@ -420,7 +428,7 @@ footer .navplus {
     opacity: 1;
     transform: scale(1);
   }
-
+  
   /* ===== TEXTO EMBAIXO DO VITRAL ===== */
   .textcel p {
     font-family: Italiana, cursive;
@@ -441,6 +449,15 @@ footer .navplus {
     cursor: pointer;
     transition: transform 0.25s ease;
     font-size: 1.7rem;
+    position: absolute;
+  }
+
+  .btnesq {
+    left: 20vw;
+  }
+
+  .btndir {
+    right: 20vw;
   }
 
   .btnesq:hover,
@@ -488,6 +505,10 @@ footer .navplus {
 
   .plus a {
     font-size: 1.5rem;
+  }
+
+  .plus a:hover {
+    font-size: 1.7rem;
   }
 
   /* ===== ESCONDE VERSÃO DESKTOP ===== */

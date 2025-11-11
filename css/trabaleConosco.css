@@ -138,12 +138,15 @@ main {
 }
 .forms{
     margin-top: 20px;
-    border: solid var(--bg1-color ) 2px;
+    border: solid var(--bg1-color ) 1px;
     padding: 10px;
     border-radius: 20px;
 }
 .GF1, .GF2{margin: 20px;}
-.GF2LB{display: flex;}
+.GF2LB{
+    display: flex;
+    flex-direction: column;
+}
 .GF1 label{
     color: var(--text-color);
     font-family: "SUSE Mono", 'Times New Roman', Times;
@@ -286,6 +289,10 @@ footer .navplus {
 
     .plus a {
         font-size: 1.5rem;
+    }
+
+    .plus a:hover {
+        font-size: 1.7rem;
     }
 }
 

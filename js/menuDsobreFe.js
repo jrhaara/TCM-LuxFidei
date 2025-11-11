@@ -2,6 +2,7 @@
 const menuBtn = document.querySelector(".headerbtn button");
 const nav = document.getElementById("sideNav");
 const closeNav = document.getElementById("closeNav");
+const sections = document.querySelectorAll('.vitrais3');
 
   // ===== MENU LATERAL =====
   if (menuBtn && nav && closeNav) {
@@ -32,3 +33,15 @@ const closeNav = document.getElementById("closeNav");
       }
     });
   }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        // se preferir que apareça só uma vez:
+        // observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(sec => observer.observe(sec));
