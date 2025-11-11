@@ -129,9 +129,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (imgCel && textCel && btnEsq && btnDir) {
     const vitraisCelulares = [
-      { img: "Imagens/Vitral_Jesus.png", texto: "Dogmas about Jesus", link: "#" },
+      { img: "Imagens/Vitral_Jesus.png", texto: "Dogmas about Jesus", link: "dogmasJesus_us.html" },
       { img: "Imagens/Vitral_Deus.png", texto: "Central Dogmas", link: "menuDsobreFe_us.html" },
-      { img: "Imagens/Vitral_mariano.png", texto: "Marian Dogmas", link: "#" }
+      { img: "Imagens/Vitral_mariano.png", texto: "Marian Dogmas", link: "dogmasMarian_us.html" }
     ];
 
     let indice = 0;

@@ -2,6 +2,7 @@
 const menuBtn = document.querySelector(".headerbtn button");
 const nav = document.getElementById("sideNav");
 const closeNav = document.getElementById("closeNav");
+const body = document.body;
 const sections = document.querySelectorAll('.vitrais3');
 
   // ===== MENU LATERAL =====

@@ -306,30 +306,80 @@ main {
     width: 85%;
     margin: 85px auto 0;
 }
+
+/* ===== CONTAINER DE INFOS ===== */
+.infos-container {
+    width: 100%;
+    margin: 40px auto 0;
+    padding-bottom: 40px;
+}
+
 .infos {
-  margin-bottom: 70px;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 2s ease, transform 2s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: var(--bg3-color);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
 }
+
 .infos.show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
+
+.infos:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.infos-image {
+    flex: 0 0 200px;
+    margin: 0 30px;
+}
+
+.infos-image img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.infos-image img:hover {
+    transform: scale(1.05);
+}
+
+.infos-content {
+    flex: 1;
+}
+
 .ttl p {
     font-family: "Jim Nightshade", cursive;
     color: var(--accent-color);
-    font-size: 3vw;
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 2.5vw;
+    text-align: left;
+    margin-bottom: 15px;
     filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
 }
-.text p {
+
+.infos .text {
+    flex: 1;
+}
+
+.infos .text p {
     color: var(--text-color);
     font-family: "SUSE Mono", 'Times New Roman', Times;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     text-align: justify;
-    margin: 15px;
+    line-height: 1.8;
+    margin: 10px 0;
 }
 
 /* ===== FOOTER ===== */
@@ -499,13 +549,33 @@ footer .navplus {
     width: 90%;
   }
 
-  .ttl p {
-    font-size: 3rem;
+  .infos-container {
+    width: 100%;
   }
 
-  .text p {
-    font-size: 1.9rem;
+  .infos {
+    flex-direction: column !important;
+    align-items: center;
     text-align: center;
+  }
+
+  .infos-image {
+    flex: 0 0 auto;
+    margin: 0 0 20px 0;
+  }
+
+  .infos-image img {
+    max-width: 250px;
+  }
+
+  .ttl p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .infos .text p {
+    font-size: 1.1rem;
+    text-align: justify;
   }
 
   /* ===== OUTRAS CORREÇÕES ===== */
@@ -595,8 +665,31 @@ footer .navplus {
     font-size: 2.5rem;
   }
 
-  .text p {
-    font-size: 1.2rem;
+  .infos-container {
+    width: 100%;
+  }
+
+  .infos {
+    flex-direction: column !important;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .infos-image {
+    margin-bottom: 15px;
+  }
+
+  .infos-image img {
+    max-width: 180px;
+  }
+
+  .ttl p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .infos .text p {
+    font-size: 1rem;
   }
 
   footer p {

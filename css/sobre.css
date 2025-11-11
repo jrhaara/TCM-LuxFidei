@@ -2,6 +2,7 @@
 :root {
     --bg1-color: #000;
     --bg3-color: #ffffff;
+    --text-color: #000;
     --text1-color: #000;
     --text2-color: rgba(0, 0, 0, 0.514);
     --accent-color: #d69302;
@@ -286,6 +287,10 @@ footer .navplus {
     .joao .text, .paroquia .text {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .imgs {
+        align-items: center;
     }
 
     .imgs img{
