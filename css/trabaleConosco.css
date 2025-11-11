@@ -15,6 +15,19 @@
     box-sizing: border-box;
 }
 
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar {
     width: 8px;
@@ -141,6 +154,13 @@ main {
     border: solid var(--bg1-color ) 1px;
     padding: 10px;
     border-radius: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.forms.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 .GF1, .GF2{margin: 20px;}
 .GF2LB{

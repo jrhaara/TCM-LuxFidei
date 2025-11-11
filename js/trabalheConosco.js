@@ -4,6 +4,8 @@ const nav = document.getElementById("sideNav");
 const closeNav = document.getElementById("closeNav");
 const form = document.querySelector(".forms");
 const submitBtn = document.querySelector(".btn");
+const sections = document.querySelectorAll('.forms');
+
 
   // ===== MENU LATERAL =====
   if (menuBtn && nav && closeNav) {
@@ -34,3 +36,16 @@ const submitBtn = document.querySelector(".btn");
       }
     });
   }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        // se preferir que apareça só uma vez:
+        // observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(sec => observer.observe(sec));
+
