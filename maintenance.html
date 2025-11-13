@@ -8,76 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jim+Nightshade&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
-            color: #fff;
-            font-family: "SUSE Mono", 'Times New Roman', Times, serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .maintenance-container {
-            text-align: center;
-            max-width: 600px;
-            padding: 40px;
-            background: rgba(0, 0, 0, 0.8);
-            border: 2px solid #d69302;
-            border-radius: 15px;
-            box-shadow: 0 0 30px rgba(214, 147, 2, 0.3);
-        }
-        
-        .maintenance-icon {
-            font-size: 80px;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.7; transform: scale(1.1); }
-        }
-        
-        h1 {
-            font-family: "Jim Nightshade", cursive;
-            font-size: 3rem;
-            color: #d69302;
-            margin-bottom: 20px;
-        }
-        
-        p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 15px;
-        }
-        
-        .message {
-            background: rgba(214, 147, 2, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #d69302;
-            margin-top: 30px;
-        }
-        
-        .logo {
-            margin-bottom: 30px;
-        }
-        
-        .logo img {
-            width: 100px;
-            opacity: 0.8;
-        }
-    </style>
+    <link rel="stylesheet" href="css/maintenance.css">
 </head>
 <body>
     <div class="maintenance-container">
@@ -91,7 +22,7 @@
         <p>Please come back soon.</p>
         <div class="message">
             <p><strong>Thank you for your understanding.</strong></p>
-            <p style="font-size: 0.9rem; margin-top: 10px;">Lux Fidei</p>
+            <p class="maintenance-signature">Lux Fidei</p>
         </div>
     </div>
 </body>
