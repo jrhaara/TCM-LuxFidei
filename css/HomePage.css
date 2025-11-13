@@ -317,7 +317,7 @@ main {
 .infos {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 60px;
     padding: 30px;
     background-color: var(--bg3-color);
