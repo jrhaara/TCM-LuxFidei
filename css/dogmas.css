@@ -230,6 +230,8 @@ nav a:hover {
     font-size: 2.5vw;
     color: var(--accent-color);
     margin-bottom: 15px;
+    font-weight: bold;
+    display: block;
 }
 
 .dogma-description {
@@ -243,7 +245,7 @@ nav a:hover {
 
 .dogma-info {
     background-color: rgba(214, 147, 2, 0.1);
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     margin-top: 15px;
 }
@@ -252,13 +254,39 @@ nav a:hover {
     color: var(--text2-color);
     font-family: 'SUSE Mono', 'Times New Roman', Times;
     font-size: 1vw;
-    line-height: 1.6;
-    margin: 8px 0;
+    line-height: 1.8;
+    margin: 10px 0;
 }
 
 .dogma-info strong {
     color: var(--accent-color);
     font-weight: bold;
+}
+
+.dogma-category {
+    color: var(--accent-color);
+    font-family: 'SUSE Mono', 'Times New Roman', Times;
+    font-size: 0.9vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.dogma-quote {
+    font-style: italic;
+    color: var(--text-color);
+    border-left: 3px solid var(--accent-color);
+    padding-left: 15px;
+    margin: 15px 0;
+}
+
+.dogma-spiritual {
+    background-color: rgba(214, 147, 2, 0.05);
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-left: 3px solid var(--accent-color);
 }
 
 /* ===== FOOTER ===== */
@@ -448,4 +476,6 @@ footer .navplus {
         font-size: 1.2rem;
     }
 }
+
+
 
