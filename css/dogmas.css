@@ -203,24 +203,6 @@ nav a:hover {
     flex-direction: row-reverse;
 }
 
-.dogma-image {
-    flex: 0 0 200px;
-    margin: 0 30px;
-}
-
-.dogma-image img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.dogma-image img:hover {
-    transform: scale(1.05);
-}
-
 .dogma-content {
     flex: 1;
 }
@@ -371,15 +353,6 @@ footer .navplus {
         text-align: center;
     }
 
-    .dogma-image {
-        flex: 0 0 auto;
-        margin: 0 0 20px 0;
-    }
-
-    .dogma-image img {
-        max-width: 250px;
-    }
-
     .dogma-title {
         font-size: 2rem;
         text-align: center;
@@ -443,15 +416,7 @@ footer .navplus {
         padding: 20px;
         margin-bottom: 40px;
     }
-
-    .dogma-image {
-        margin-bottom: 15px;
-    }
-
-    .dogma-image img {
-        max-width: 180px;
-    }
-
+    
     .dogma-title {
         font-size: 1.8rem;
     }
